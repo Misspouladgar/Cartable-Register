@@ -1,0 +1,233 @@
+*{
+    direction: rtl;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: shabnam;
+}
+body{
+    background-image: url(images/1.jpg);
+    background-size: cover;
+}
+.navbar{
+    overflow: hidden;
+    background-color: #333;
+    /* position: fixed;
+    top:0;
+    width: 100%; */
+}
+.navbar a{
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.dropdown{
+    float: right;
+    overflow: hidden;
+}
+.dropdown .dropbtn{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn{
+    background: #ddd;
+    color: black;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+.dropdown-content a{
+    float: none;
+    display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: right;
+}
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.fa-envelope{
+    color: gainsboro;
+    font-size: 30px;
+}
+.three{
+    background-color:red;
+    color: yellow;
+    border-radius: 50%;
+    border:none;
+    padding: 5px;
+}
+.three, .fa-envelope{
+    cursor: pointer;
+}
+.guide{
+    border: 1px solid grey;
+    background-color: #db5618c0;
+    color: #d3dafa;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 16px 16px;
+    float: left;
+}
+.guide:hover{
+    color: #d3dafa;
+    background: #ff5100;
+}
+/* شروع منو بغل */
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a, .property-btn{
+    padding: 8px 8px 8px 32px;
+    display: block;
+    text-decoration: none;
+    font-size: x-large;
+    color: #818181;
+    transition: 0.3s;
+    background: none;
+    width: 100%;
+    text-align: right;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+/* on mouse-hover */
+.sidenav a:hover, .property-btn:hover{
+    color: #d12929;
+}
+/* Add an active class to the active property button */
+.active {
+    background-color: green;
+    color: white;
+  }
+.link-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  .fa-caret-down {
+    float: left;
+    padding-right: 8px;
+  }
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/* پایان منو بغل */
+
+/* nav Btn */
+#navBtn{
+    position: fixed;
+    top:0%;
+    left:5%;
+    font-size: 2.5rem;
+    color: yellow;
+    cursor: pointer;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
+}
+/* nav animation */
+@keyframes pulse{
+    0%{
+        transform: scale(1)
+    }
+    50%{
+        transform: scale(1.5)
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  /* شروع کارتابل */
+  .Cartbot{
+      height: 200px;
+      width: 200px;
+      position: fixed;
+      z-index: 1;
+      background-color: #d3dafa;
+      right: 0;
+      overflow: hidden;
+      /* padding-top: 60px; */
+  }
+  .Cartbot a, .cartbot-btn, .duties-btn1{
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: rgb(0, 89, 233);
+      display: block;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: right;
+      cursor: pointer;
+      /* outline: none; */
+  }
+  .Cartbot a:hover, .cartbot-btn:hover{
+      /* color: #f1f1f1; */
+      color:rgb(0, 0, 200);
+  }
+  /* Add an active class to the active cartbot button */
+.active {
+    background-color: green;
+    color: white;
+  }
+  .duties, .assigned-task, .note{
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  .footer{
+      background-color: #333;
+      position: fixed;
+      padding: 20px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      color: white;
+      text-align: center;
+  }
+  .footer a{
+      padding: 5px 15px 5px;
+      font-size: 25px;
+      cursor: pointer;
+      color: gainsboro;
+  }
+  .footer a:hover{
+      color: rgba(236, 27, 27, 0.787);
+  }

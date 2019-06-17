@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v4.0.0/dist/font-face.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <title>اطلاعات شخصی</title>
+</head>
+<body>
+    <header class="navbar">
+        <a href="#home">خانه</a>
+        <a href="#about">درباره ما</a>
+        <div class="dropdown">
+            <button class="dropbtn">خبرها
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">عمومی</a>
+                <a href="#">سیاسی</a>
+                <a href="#">شهری</a>
+            </div>
+        </div>
+        <a href="#interests">علاقمندی ها</a>
+        <a href="#contact">تماس با ما</a>
+        <button class="three">3</button><i class="fas fa-envelope"></i>
+        <button class="guide"><b>راهنما</b> </button>
+                <!-- nav btn -->
+        <span onclick="openNav()" id="navBtn" class="Sandwichicon">&#9776;</span>
+        
+    </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">دپارتمان</a>
+        <button class="property-btn">بخش اموال
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="link-container">
+            <a href="#">لینک 1</a>
+            <a href="#">لینک 2</a>
+            <a href="#">لینک 3</a>
+        </div>
+        <a href="#">حقوق و دستمزد</a>
+        <a href="#">جستجو</a>
+    </div>
+
+    <!-- شروع کارتابل -->
+
+    <form action="" >
+        <div class="Cartbot">
+            <button class="cartbot-btn">کارتابل
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="duties">
+                <button class="duties-btn1">وظایف محوله
+                        <i class="fas fa-caret-left"></i>
+                </button>
+                <div class="duties-link">
+                    <a href="">همه نامه های وارده</a>
+                    <a href="">نامه های خوانده شده</a>
+                    <a href="">نامه های خوانده نشده</a>
+                </div>
+            </div>
+            <div class="assigned-task">
+                <button class="assigned-task-btn">وظایف محول شده
+                        <i class="fas fa-caret-left"></i>
+                </button>
+                <div class="assigned-task-link">
+                <a href="#">نامه های اقدام فوری</a>
+                <a href="#">نامه های محرمانه</a>
+                <a href="#">نامه های ارسالی</a></div>
+            </div>
+            <a href="#" class="note">یادداشت های رسیده</a>
+        </div>
+    </form>
+
+
+    <div class="footer">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-google-plus"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-viber"></i></a>
+    </div>
+    <script src="JS.js"></script>
+</body>
+</html>
